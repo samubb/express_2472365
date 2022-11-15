@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Registrar Pedidos</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <h2>Registrar Productos</h2>
+  </header>
+  <center>
+  <div class="di">
+  <form action="">
+    <label>Producto</label>
+    <select class="form-select" id="product">
+        <option value="1">Aceite</option>
+        <option value="2">Arroz</option>
+        <option value="3">Agua</option>
+    </select>
+    <br>
+    <label>Precio:</label>
+    <input class="form-control" type="text" id="precio">
+    <br>
+    <label>Cantidad:</label>
+    <input class="form-control"  type="text" id="cantidad">
+    <br>
+    <label>Subtotal:</label>
+    <input class="form-control"  type="text" id="subtotal" readonly><br>
+    <button class="btn btn-primary" id="btnRegistrar" type="button">Registrar</button>
+</form>
+<p id="respuesta"></p>
+</div>
+</center>
+<script src="../assets/js/funciones.js"></script>
+</body>
+
+</html>
