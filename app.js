@@ -1,7 +1,8 @@
+require("dotenv").config()
 const express = require("express") // importar el paquete express
 const app = express()
 const hbs = require('hbs')
-const port =8282 //definir el puerto 
+const port =process.env.PORT //definir el puerto 
 
 // servir contenido estatico
 // Establecer el directorio donde se encuentran los 
@@ -28,8 +29,9 @@ app.get("/registrar",(req,res)=>{
 })
 
 app.get('*',(req,res)=>{ 
+    res.send("404")
     //res.send('pagina no encontrada')//tambien sirve para validar 
-    res.sendFile(__dirname + '/public/404.html')//llamar la pagina 
+    //res.sendFile(__dirname + '/public/404.html')//llamar la pagina 
 })
 
 app.listen(port, ()=>{
